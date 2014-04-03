@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>Ember Bookmarks</title>
+    <link rel="stylesheet" href="styles/app.css" media="screen">
+  </head>
+  <body>
+    <nav class="sidebar">
+      <ol>
+        <li><a href="#">How to get animations out of your head - Scott Hurff</a></li>
+        <li><a href="#">Glitch | Public Domain Art &amp; Code</a></li>
+        <li><a href="#">webdesignrepo - a compact list of helpful webdesign links</a></li>
+        <li><a href="#">How to get animations out of your head - Scott Hurff</a></li>
+        <li><a href="#">Glitch | Public Domain Art &amp; Code</a></li>
+        <li><a href="#">webdesignrepo - a compact list of helpful webdesign links</a></li>
+        <li><a href="#">How to get animations out of your head - Scott Hurff</a></li>
+        <li><a href="#">Glitch | Public Domain Art &amp; Code</a></li>
+        <li><a href="#">webdesignrepo - a compact list of helpful webdesign links</a></li>
+        <li><a href="#">How to get animations out of your head - Scott Hurff</a></li>
+        <li><a href="#">Glitch | Public Domain Art &amp; Code</a></li>
+        <li><a href="#">webdesignrepo - a compact list of helpful webdesign links</a></li>
+        <li><a href="#">How to get animations out of your head - Scott Hurff</a></li>
+        <li><a href="#">Glitch | Public Domain Art &amp; Code</a></li>
+        <li><a href="#">webdesignrepo - a compact list of helpful webdesign links</a></li>
+        <li><a href="#">How to get animations out of your head - Scott Hurff</a></li>
+        <li><a href="#">Glitch | Public Domain Art &amp; Code</a></li>
+        <li><a href="#">webdesignrepo - a compact list of helpful webdesign links</a></li>
+        <li><a href="#">How to get animations out of your head - Scott Hurff</a></li>
+        <li><a href="#">Glitch | Public Domain Art &amp; Code</a></li>
+        <li><a href="#">webdesignrepo - a compact list of helpful webdesign links</a></li>
+        <li><a href="#">How to get animations out of your head - Scott Hurff</a></li>
+        <li><a href="#">Glitch | Public Domain Art &amp; Code</a></li>
+        <li><a href="#">webdesignrepo - a compact list of helpful webdesign links</a></li>
+      </ol>
+    </nav>
+
+    <main>
+      <article class="bookmark-show">
+        <a href="#" class="add-bookmark">Add a Bookmark</a>
+
+        <section class="bookmark-show">
+          <h1>How to get Animations out of your head</h1>
+          <p>You’ve probably been doing this more recently: you’ve got an idea for a UI transition, but you resort to hand motions and sound effects like “fwshh, pop, hwwct” to communicate what’s in your head.</p>
+          <iframe src="http://scotthurff.com/posts/how-to-get-animations-out-of-your-head"></iframe>
+        </section>
+
+        <section class="bookmark-create is-hidden">
+          <form>
+            <label for="url">Bookmark URL</label>
+            <input type="text" id="url" placeholder="http://www.google.com">
+            <input type="submit" value="Save Bookmark">
+          </form>
+        </section>
+      </article>
+    </main>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+    <script>
+      $('.add-bookmark').click(function() {
+          $('section').toggleClass('is-hidden');
+      });
+
+    </script>
+  </body>
+</html>
+
