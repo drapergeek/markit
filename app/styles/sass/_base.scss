@@ -1,0 +1,126 @@
+@import "base-variables";
+@import "base-extends";
+
+//************************************************************************//
+// Base Global Styles
+//************************************************************************//
+
+body, html {
+  background: white;
+  line-height: 1.5;
+}
+
+body {
+  font-family: $helvetica;
+}
+
+div.inner-wrapper {
+  padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $base-font-family;
+  font-weight: 100;
+}
+
+a, a:link, a:active, a:visited {
+  color: $base-link-color;
+  text-decoration: none;
+}
+
+a:hover {
+  color: darken($base-link-color, 15%);
+}
+
+$selection: hsl(14, 97%, 55%);
+::selection {
+  background: $selection;
+}
+::-moz-selection {
+  background: $selection;
+}
+
+.is-hidden {
+  display: none;
+}
+
+//************************************************************************//
+// Top Bar
+//************************************************************************//
+
+.add-bookmark {
+  background: $base-link-color;
+  border-radius: 3px;
+  color: white !important;
+  float: right;
+  padding: .5em 1em;
+
+  &:hover, &:focus {
+    background: lighten($base-link-color, 5%);
+  }
+}
+
+//************************************************************************//
+// Sidebar
+//************************************************************************//
+
+.sidebar {
+  background: #fafaf8;
+  height: 100%;
+  left: 0;
+  max-height: 100%;
+  overflow-y: scroll;
+  position: fixed;
+
+  a {
+    display: block;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 1em;
+    max-width: $sb-width;
+    background: #fafaf8;
+
+    &:hover, &:focus {
+      background: darken(#fafaf8, 5%);
+    }
+  }
+}
+
+//************************************************************************//
+// Main
+//************************************************************************//
+
+main {
+  display: block;
+  padding: 0 5em 0 (5em + $sb-width);
+}
+
+article {
+  margin: 0 auto;
+  max-width: 52em;
+  padding-top: 2.5em;
+
+  h1 {
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: .25em;
+  }
+}
+
+iframe {
+  border: 1px solid #ddd;
+  height: 40em;
+  margin: 5em 0;
+  width: 100%;
+}
+
+section {
+  clear: both;
+  margin-top: 8em;
+}
+
+// Bookmark Show
+
+input[type="submit"] {
+  float: right;
+}

@@ -28,6 +28,7 @@
     "stylus-brunch": "~1.8.0",
     "uglify-js-brunch": "~1.7.6",
     "clean-css-brunch": "~1.7.1",
+    "sass-brunch": "~1.7.0",
     "auto-reload-brunch": "~1.7.1",
     "ember-handlebars-brunch": "~1.2.0",
     "semver": "~2.2.1",
