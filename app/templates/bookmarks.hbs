@@ -1,7 +1,7 @@
 <nav class="sidebar">
   <ol>
     {{#each}}
-      <li><a href="#">{{name}}</a></li>
+    <li>{{#link-to 'bookmarks.bookmark' this}}{{name}}{{/link-to}}</li>
     {{/each}}
     <li><a href="#">Glitch | Public Domain Art &amp; Code</a></li>
     <li><a href="#">webdesignrepo - a compact list of helpful webdesign links</a></li>
