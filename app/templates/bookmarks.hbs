@@ -3,7 +3,7 @@
     {{#each itemController="bookmark"}}
       <li>
         {{#link-to 'bookmarks.bookmark' this}}
-          <img class='url-favicon' {{bind-attr src=favicon}}/> {{name}}
+        <img class='url-favicon' {{bind-attr src=favicon}}/> {{domain}}
         {{/link-to}}
       </li>
     {{/each}}
