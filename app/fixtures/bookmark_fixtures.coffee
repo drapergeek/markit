@@ -24,19 +24,4 @@ module.exports = App.Bookmark.FIXTURES = [
     name: 'Trajectory'
     url: 'http://apptrajectory.com'
   }
-  {
-    id: 6
-    name: 'Basecamp'
-    url: 'http://basecamp.com'
-  }
-  {
-    id: 7
-    name: 'Amazon'
-    url: 'http://amazon.com/'
-  }
-  {
-    id: 8
-    name: 'Twitter'
-    url: 'http://twitter.com'
-  }
 ]
