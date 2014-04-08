@@ -6,7 +6,7 @@
     {{#each itemController="bookmark"}}
       <li>
         {{#link-to 'bookmarks.bookmark' this}}
-        <img class='url-favicon' {{bind-attr src=favicon}}/> {{domain}}
+          {{favicon-image url=url}} {{domain}}
         {{/link-to}}
       </li>
     {{/each}}
