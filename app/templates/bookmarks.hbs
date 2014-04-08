@@ -1,4 +1,7 @@
 <nav class="sidebar">
+  {{#link-to 'bookmarks.new' class='new-bookmark'}}
+    New Bookmark
+  {{/link-to}}
   <ol>
     {{#each itemController="bookmark"}}
       <li>

@@ -1,7 +1,12 @@
 <section class="bookmark-create">
   <form>
     <label for="url">Bookmark URL</label>
-    <input type="text" id="url" placeholder="http://www.google.com">
-    <input type="submit" value="Save Bookmark">
+    {{input
+      type='text'
+      id='url'
+      placeholder='http://www.google.com'
+      value=url
+    }}
+    <input type="submit" value="Save Bookmark" {{action 'save'}}>
   </form>
 </section>
